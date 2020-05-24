@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>KERALA TOURISM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\signup.css">
+</head>
+<body>
+     
+<!--NAVIGATION BAR-->
+
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">LOGIN</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="signup.html" active>SIGNUP</a>
+      </li>
+
+    </ul>
+  </nav>
+
+<!--END OF NAVIGATION BAR-->
+
+
+<!--HEADER-->
+
+    <header> 
+      <div class="col col-xl-6">
+        <h1>Library</h1>
+      </div>
+      <div class="b"></div>
+    </header>
+
+<!--END OF HEADER-->
+
+
+<!--BODY-->
+      
+    <div class="container"> 
+        <div class="col-lg-8 m-auto d-block">
+            <!--form-->
+                <form class="box" id="form"  onsubmit="return validate()" action="index.html">
+                    <h1>SIGN UP</h1>
+                    <div class="form-group">
+                        <input type="text" name="fname" class="form-control error" id="fname" placeholder="FIRST NAME" autocomplete="off">
+                        <span id="1" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="lname" class="form-control error" id="lname" placeholder="LAST NAME" autocomplete="off">
+                        <span id="2" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="DOB">DOB :</label>
+                        <input type="date" name="DOB" class="form-control error" id="DOB" placeholder="DOB" autocomplete="off">
+                        <span id="2a" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="GENDER">GENDER :</label>
+                        <input type="radio" name="GENDER" id="GENDER"class="error" id="GENDER">MALE
+                        <input type="radio" name="GENDER" id="GENDER"class="error" id="GENDER">FEMALE
+                        <span id="2b" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">ADDRESS : </label>
+                        <textarea name="address" columns="10" rows="5" class="form-control" id="address" autocomplete="off">
+                        </textarea> 
+                        <span id="2c" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control error" id="username" placeholder="USERNAME" autocomplete="off">
+                        <span id="3" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">    
+                        <input type="password" name="password" class="form-control error" id="password" placeholder="PASSWORD" autocomplete="off">
+                        <span id="4" class="text-danger font weight bold"></span>
+                        <span id="4a" class="text-danger font weight bold"></span>
+                       
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="cpass" class="form-control error" id="cpass" placeholder="CONFIRM PASSWORD" autocomplete="off">
+                        <span id="5" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control error" id="email" placeholder="E-MAIL" autocomplete="off">
+                        <span id="6" class="text-danger font weight bold"></span>
+                    </div>
+                    <div class="form-group">  
+                        <input type="number" id="mob" name="mob" class="form-control error" id="mob" placeholder="MOBILE NUMBER" autocomplete="off">
+                        <span id="7" class="text-danger font weight bold"></span>
+                    </div>
+                    
+                        <input type="submit" onsubmit="index.html" name="submit" value="sign in" class="btn" autocomplete="off">
+                        <p>if already have an account </p>
+                        <input type="submit" onclick="parent.location='login.html'" name="submit" value="log in" class="btn" autocomplete="off">
+                </form>
+            <!--end of form-->
+        </div>
+    </div>
+
+<!-- END OF BODY-->
+
+<!--footer-->
+        <footer>
+            <h2>Follow Us</h2>
+          <div class="icon-group">
+          <a href="https://www.twitter.com/" class="twitter btn">Twitter</a>   
+          <a href="https://www.facebook.com/" class="fb btn">Facebook</a>
+         <a href="https://www.google.com/" class="google btn">Google+</a>
+          </div>
+              
+        </footer>
+<!--end of footer-->  
+
+
+<!--script tag-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js\signup.js"></script>
+
+<!--end of script tag-->
+
+</body>
+</html>
